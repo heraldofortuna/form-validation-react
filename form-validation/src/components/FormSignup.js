@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import UseForm from "../services/UseForm";
-import ValidateInfo from "../services/ValidateInfo";
+import validate from "../services/ValidateInfo";
 
 const StyledFormSignup = styled.div`
   background-color: green;
@@ -11,7 +11,7 @@ const StyledFormSignup = styled.div`
 `;
 
 function FormSignup() {
-  const { handleChange, values, handleSubmit } = UseForm(ValidateInfo);
+  const { handleChange, values, handleSubmit, errors } = UseForm(validate);
 
   return (
     <StyledFormSignup>
@@ -34,6 +34,7 @@ function FormSignup() {
             value={values.username}
             onChange={handleChange}
           />
+          {errors.username && <p>{errors.username}</p>}
         </div>
         <div className="form__inputs">
           <label htmlFor="email" className="form__label">
@@ -46,6 +47,7 @@ function FormSignup() {
             className="form__input"
             placeholder="Enter your email"
           />
+          {errors.email && <p>{errors.email}</p>}
         </div>
         <div className="form__inputs">
           <label htmlFor="password" className="form__label">
@@ -58,6 +60,7 @@ function FormSignup() {
             className="form__input"
             placeholder="Enter your password"
           />
+          {errors.password && <p>{errors.password}</p>}
         </div>
         <div className="form__inputs">
           <label htmlFor="password2" className="form__label">
@@ -70,6 +73,7 @@ function FormSignup() {
             className="form__input"
             placeholder="Confirm your password"
           />
+          {errors.password2 && <p>{errors.password2}</p>}
         </div>
         <button className="form__button" type="submit">
           Sign up

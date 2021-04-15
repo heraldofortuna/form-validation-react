@@ -22,6 +22,8 @@ function ValidateInfo(values) {
   } else if (values.password2 !== values.password) {
     errors.password2 = "Password do not match";
   }
+
+  return errors;
 }
 
 export default ValidateInfo;
