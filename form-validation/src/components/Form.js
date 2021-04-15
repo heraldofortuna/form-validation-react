@@ -4,8 +4,12 @@ import FormSignup from "./FormSignup";
 import FormSuccess from "./FormSuccess";
 
 const StyledForm = styled.div`
-  background-color: blue;
+  background-color: var(--white);
   min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 function Form() {

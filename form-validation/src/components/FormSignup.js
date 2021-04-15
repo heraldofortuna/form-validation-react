@@ -3,11 +3,28 @@ import UseForm from "../services/UseForm";
 import validate from "../services/ValidateInfo";
 
 const StyledFormSignup = styled.div`
-  background-color: green;
+  background-color: var(--black);
   width: fit-content;
   border-radius: 12px;
   padding: 16px;
   margin: 0 auto;
+  box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .form__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
 `;
 
 function FormSignup({ submitForm }) {
@@ -18,12 +35,12 @@ function FormSignup({ submitForm }) {
 
   return (
     <StyledFormSignup>
+      <h1>
+        Get started with us today!
+        <br></br>Create your account by<br></br>
+        filling out the information below.
+      </h1>
       <form className="form" onSubmit={handleSubmit}>
-        <h1>
-          Get started with us today!
-          <br></br>Create your account by<br></br>
-          filling out the information below.
-        </h1>
         <div className="form__inputs">
           <label htmlFor="username" className="form__label">
             Username
