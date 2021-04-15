@@ -36,6 +36,11 @@ const StyledFormSignup = styled.div`
         border-radius: 4px;
         padding: 4px;
       }
+
+      & > .form__error {
+        color: var(--red);
+        font-size: 12px;
+      }
     }
 
     & > .form__button {
@@ -48,6 +53,15 @@ const StyledFormSignup = styled.div`
       border: none;
       border-radius: 4px;
       margin: 6px 0 0 0;
+    }
+
+    & > .form__login {
+      font-size: 14px;
+      text-align: center;
+
+      & > a {
+        color: var(--blue);
+      }
     }
   }
 `;
@@ -78,7 +92,7 @@ function FormSignup({ submitForm }) {
             value={values.username}
             onChange={handleChange}
           />
-          {errors.username && <p>{errors.username}</p>}
+          {errors.username && <p className="form__error">{errors.username}</p>}
         </div>
         <div className="form__inputs">
           <label htmlFor="email" className="form__label">
@@ -91,7 +105,7 @@ function FormSignup({ submitForm }) {
             className="form__input"
             placeholder="Enter your email"
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.email && <p className="form__error">{errors.email}</p>}
         </div>
         <div className="form__inputs">
           <label htmlFor="password" className="form__label">
@@ -104,7 +118,7 @@ function FormSignup({ submitForm }) {
             className="form__input"
             placeholder="Enter your password"
           />
-          {errors.password && <p>{errors.password}</p>}
+          {errors.password && <p className="form__error">{errors.password}</p>}
         </div>
         <div className="form__inputs">
           <label htmlFor="password2" className="form__label">
@@ -117,7 +131,9 @@ function FormSignup({ submitForm }) {
             className="form__input"
             placeholder="Confirm your password"
           />
-          {errors.password2 && <p>{errors.password2}</p>}
+          {errors.password2 && (
+            <p className="form__error">{errors.password2}</p>
+          )}
         </div>
         <button className="form__button" type="submit">
           Sign up

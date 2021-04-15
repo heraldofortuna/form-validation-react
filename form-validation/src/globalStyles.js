@@ -4,6 +4,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --white: #FFFFFF;
     --black: #1F1F20;
+    --red: #E73E3E;
+    --blue: #4992EF;
   }
 
   * {
