@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import UseForm from "../services/UseForm";
+import ValidateInfo from "../services/ValidateInfo";
 
 const StyledFormSignup = styled.div`
   background-color: green;
@@ -10,7 +11,7 @@ const StyledFormSignup = styled.div`
 `;
 
 function FormSignup() {
-  const { handleChange, values, handleSubmit } = UseForm();
+  const { handleChange, values, handleSubmit } = UseForm(ValidateInfo);
 
   return (
     <StyledFormSignup>
