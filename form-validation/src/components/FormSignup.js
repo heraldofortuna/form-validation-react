@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 const StyledFormSignup = styled.div`
   background-color: green;
+  width: fit-content;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0 auto;
 `;
 
 function FormSignup() {
@@ -9,8 +13,9 @@ function FormSignup() {
     <StyledFormSignup>
       <form className="form">
         <h1>
-          Get started with us today! Create your account by filling out the
-          information below.
+          Get started with us today!
+          <br></br>Create your account by<br></br>
+          filling out the information below.
         </h1>
         <div className="form__inputs">
           <label htmlFor="username" className="form__label">
