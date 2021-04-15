@@ -10,11 +10,11 @@ const StyledFormSignup = styled.div`
 `;
 
 function FormSignup() {
-  const { handleChange, values } = UseForm();
+  const { handleChange, values, handleSubmit } = UseForm();
 
   return (
     <StyledFormSignup>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h1>
           Get started with us today!
           <br></br>Create your account by<br></br>
