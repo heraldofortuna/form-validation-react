@@ -1,10 +1,13 @@
-import "./App.css";
+import { Fragment } from "react";
+import GlobalStyle from "./globalStyles";
+import Form from "./components/Form";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Title</h1>
-    </div>
+    <Fragment>
+      <GlobalStyle />
+      <Form />
+    </Fragment>
   );
 }
 
