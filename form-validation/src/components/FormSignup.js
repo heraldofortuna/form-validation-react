@@ -47,7 +47,7 @@ const StyledFormSignup = styled.div`
       height: 40px;
       border: none;
       border-radius: 4px;
-      margin: 12px 0 0 0;
+      margin: 6px 0 0 0;
     }
   }
 `;
@@ -123,7 +123,7 @@ function FormSignup({ submitForm }) {
           Sign up
         </button>
         <span className="form__login">
-          Already have an account? Login <a href="#">here</a>
+          Already have an account? Login <a href="/">here</a>
         </span>
       </form>
     </StyledFormSignup>
