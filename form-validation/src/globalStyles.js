@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 18px;
+    line-height: 28px;
+  }
+
+  button, a {
+    cursor: pointer;
   }
 `;
 

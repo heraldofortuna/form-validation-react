@@ -6,7 +6,7 @@ const StyledFormSignup = styled.div`
   background-color: var(--black);
   width: fit-content;
   border-radius: 12px;
-  padding: 16px;
+  padding: 24px;
   margin: 0 auto;
   box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
@@ -15,14 +15,39 @@ const StyledFormSignup = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  .form {
+  & > .form {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    .form__inputs {
+
+    & > .form__inputs {
       display: flex;
       flex-direction: column;
       gap: 4px;
+
+      & > .form__label {
+        font-size: 12px;
+      }
+
+      & > .form__input {
+        height: 30px;
+        color: var(--black);
+        border: none;
+        border-radius: 4px;
+        padding: 4px;
+      }
+    }
+
+    & > .form__button {
+      background: linear-gradient(
+        90deg,
+        rgba(1, 160, 191, 1) 0%,
+        rgba(0, 205, 246, 1) 100%
+      );
+      height: 40px;
+      border: none;
+      border-radius: 4px;
+      margin: 12px 0 0 0;
     }
   }
 `;
@@ -36,8 +61,7 @@ function FormSignup({ submitForm }) {
   return (
     <StyledFormSignup>
       <h1>
-        Get started with us today!
-        <br></br>Create your account by<br></br>
+        Get started with us today! Create your account by<br></br>
         filling out the information below.
       </h1>
       <form className="form" onSubmit={handleSubmit}>
