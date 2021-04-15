@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import UseForm from "../services/UseForm";
 
 const StyledFormSignup = styled.div`
   background-color: green;
@@ -9,6 +10,8 @@ const StyledFormSignup = styled.div`
 `;
 
 function FormSignup() {
+  const { handleChange, values } = UseForm();
+
   return (
     <StyledFormSignup>
       <form className="form">
@@ -27,6 +30,8 @@ function FormSignup() {
             name="username"
             className="form__input"
             placeholder="Enter your username"
+            value={values.username}
+            onChange={handleChange}
           />
         </div>
         <div className="form__inputs">
