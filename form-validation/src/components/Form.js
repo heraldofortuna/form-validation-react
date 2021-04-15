@@ -1,5 +1,7 @@
-import FormSignup from "./FormSignup";
+import { useState } from "react";
 import styled from "styled-components";
+import FormSignup from "./FormSignup";
+import FormSuccess from "./FormSuccess";
 
 const StyledForm = styled.div`
   background-color: blue;
@@ -7,9 +9,15 @@ const StyledForm = styled.div`
 `;
 
 function Form() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  function submitForm() {
+    setIsSubmitted(true);
+  }
+
   return (
     <StyledForm>
-      <FormSignup />
+      {!isSubmitted ? <FormSignup submitForm={submitForm} /> : <FormSuccess />}
     </StyledForm>
   );
 }

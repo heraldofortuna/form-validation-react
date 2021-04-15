@@ -9,6 +9,7 @@ function useForm(validate) {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,6 +23,7 @@ function useForm(validate) {
     e.preventDefault();
 
     setErrors(validate(values));
+    setIsSubmitting(true);
   };
 
   return { handleChange, values, handleSubmit, errors };

@@ -10,8 +10,11 @@ const StyledFormSignup = styled.div`
   margin: 0 auto;
 `;
 
-function FormSignup() {
-  const { handleChange, values, handleSubmit, errors } = UseForm(validate);
+function FormSignup({ submitForm }) {
+  const { handleChange, values, handleSubmit, errors } = UseForm(
+    submitForm,
+    validate
+  );
 
   return (
     <StyledFormSignup>
