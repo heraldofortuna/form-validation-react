@@ -32,7 +32,7 @@ function useForm(callback, validate) {
     }
   }, [callback, errors, isSubmitting]);
 
-  return { handleChange, values, handleSubmit, errors };
+  return { handleChange, handleSubmit, values, errors };
 }
 
 export default useForm;

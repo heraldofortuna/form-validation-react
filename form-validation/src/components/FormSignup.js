@@ -65,7 +65,7 @@ const StyledFormSignup = styled.div`
 `;
 
 function FormSignup({ submitForm }) {
-  const { handleChange, values, handleSubmit, errors } = UseForm(
+  const { handleChange, handleSubmit, values, errors } = UseForm(
     submitForm,
     validate
   );
@@ -76,7 +76,7 @@ function FormSignup({ submitForm }) {
         Get started with us today! Create your account by filling out the
         information below.
       </h1>
-      <form className="form" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form" noValidate>
         <div className="form__inputs">
           <label htmlFor="username" className="form__label">
             Username
@@ -89,6 +89,7 @@ function FormSignup({ submitForm }) {
             placeholder="Enter your username"
             value={values.username}
             onChange={handleChange}
+            autoComplete="username"
           />
           {errors.username && <p className="form__error">{errors.username}</p>}
         </div>
@@ -102,6 +103,8 @@ function FormSignup({ submitForm }) {
             name="email"
             className="form__input"
             placeholder="Enter your email"
+            value={values.email}
+            onChange={handleChange}
           />
           {errors.email && <p className="form__error">{errors.email}</p>}
         </div>
@@ -115,6 +118,9 @@ function FormSignup({ submitForm }) {
             name="password"
             className="form__input"
             placeholder="Enter your password"
+            value={values.password}
+            onChange={handleChange}
+            autoComplete="new-password"
           />
           {errors.password && <p className="form__error">{errors.password}</p>}
         </div>
@@ -124,10 +130,13 @@ function FormSignup({ submitForm }) {
           </label>
           <input
             id="password2"
-            type="password2"
+            type="password"
             name="password2"
             className="form__input"
             placeholder="Confirm your password"
+            value={values.password2}
+            onChange={handleChange}
+            autoComplete="new-password"
           />
           {errors.password2 && (
             <p className="form__error">{errors.password2}</p>
