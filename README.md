@@ -1,6 +1,6 @@
 # Form Validation
 
-![Project Image](duna-frontend/src/assets/project-image.PNG)
+![Project Image](form-validation/src/assets/project-image.PNG)
 
 > Vistas del proyecto.
 
@@ -18,7 +18,7 @@
 
 ## Descripción
 
-Una pequeña enciclopedia "Pokemon" donde encontrarás las características y "stats" de cada personaje al hacer click en su respectiva tarjeta.
+Un formulario muy completo hecho totalmente con React.js y usando validaciones.
 
 #### Tecnologías
 
