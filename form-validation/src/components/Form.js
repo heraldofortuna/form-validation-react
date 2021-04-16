@@ -11,7 +11,7 @@ const StyledForm = styled.div`
     rgba(0, 205, 246, 1) 100%
   );
   width: 100%;
-  height: 450px;
+  height: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;

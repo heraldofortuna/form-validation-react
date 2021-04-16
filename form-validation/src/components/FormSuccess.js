@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const StyledFormSuccess = styled.div`
-  background-color: var(--black);
-  height: 100%;
   flex: 50%;
   padding: 24px;
   margin: 0 auto;
@@ -11,7 +9,8 @@ const StyledFormSuccess = styled.div`
   text-align: center;
 
   & > p {
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: 900;
   }
 `;
 
