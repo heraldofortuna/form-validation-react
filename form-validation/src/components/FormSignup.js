@@ -4,7 +4,7 @@ import validate from "../services/ValidateInfo";
 
 const StyledFormSignup = styled.div`
   background-color: var(--black);
-  width: fit-content;
+  height: 100%;
   flex: 50%;
   border-radius: 0 8px 8px 0;
   padding: 24px;
