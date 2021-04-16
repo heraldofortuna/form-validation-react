@@ -5,12 +5,10 @@ import validate from "../services/ValidateInfo";
 const StyledFormSignup = styled.div`
   background-color: var(--black);
   width: fit-content;
-  border-radius: 12px;
+  flex: 50%;
+  border-radius: 0 8px 8px 0;
   padding: 24px;
   margin: 0 auto;
-  box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 3px 14px -5px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -75,8 +73,8 @@ function FormSignup({ submitForm }) {
   return (
     <StyledFormSignup>
       <h1>
-        Get started with us today! Create your account by<br></br>
-        filling out the information below.
+        Get started with us today! Create your account by filling out the
+        information below.
       </h1>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form__inputs">
