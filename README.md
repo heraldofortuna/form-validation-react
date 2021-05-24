@@ -2,69 +2,70 @@
 
 ![Project Image](form-validation/src/assets/project-image.PNG)
 
-> Vistas del proyecto.
+> Screenshot
 
 ---
 
-### Tabla de Contenidos
+## Table of Contents
 
-- [Descripción](#descripción)
-- [¿Cómo usarlo?](#¿-cómo-usarlo-?)
-- [Referencias](#referencias)
-- [Licencia](#licencia)
-- [Sobre el autor](#sobre-el-autor)
+- [Description](#description)
+- [How to use?](#how-to-use)
+- [References](#references)
+- [License](#license)
+- [Author](#author)
 
 ---
 
-## Descripción
+## Description
 
-Un formulario muy completo hecho totalmente con React.js y usando validaciones.
+A very complete form made entirely with React.js and using validations.
 
-#### Tecnologías
+### Technologies
 
 - React
 - JavaScript
 
-[Volver arriba](#form-validation)
+[Go up](#form-validation)
 
 ---
 
-## ¿Cómo usarlo?
+## How to use?
 
-#### Instalación:
+### Installation:
 
-Ingresa y corre en tu consola la siguiente sentencia
+Enter and run the following sentence in your console:
 
 ```html
 yarn install
 ```
 
-#### Corre el proyecto:
+### Run the project:
 
-Ingresa y corre en tu consola
+Enter and run the following sentence in your console:
 
 ```html
 yarn start
 ```
 
-para entrar al modo desarrollador.
-Por último, abre [http://localhost:3000](http://localhost:3000) para verlo en tu navegador por defecto.
+to enter developer mode.
 
-[Volver arriba](#form-validation)
+Finally, open [http://localhost:3000](http://localhost:3000) to see it in your default browser.
+
+[Go up](#form-validation)
 
 ---
 
-## Referencias
+## References
 
 ```html
 https://www.youtube.com/watch?v=KGFG-yQD7Dw
 ```
 
-[Volver arriba](#form-validation)
+[Go up](#form-validation)
 
 ---
 
-## Licencia
+## License
 
 MIT License
 
@@ -88,14 +89,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Volver arriba](#form-validation)
+[Go up](#form-validation)
 
 ---
 
-## Sobre el autor
+## Author
 
 - Twitter - [@heraldofortuna](https://twitter.com/heraldofortuna)
 - GitHub - [heraldofortuna](https://github.com/heraldofortuna)
 - Linkedin - [heraldofortuna](https://www.linkedin.com/in/heraldo-fortuna/)
 
-[Volver arriba](#form-validation)
+[Go up](#form-validation)
